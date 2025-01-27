@@ -1,0 +1,362 @@
+    <!doctype html>
+    <html lang="en">
+
+
+    <head>
+    
+      <meta charset="utf-8">
+
+      <title>Week 2: Vectors and 2D Kinematics</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+      <link rel="stylesheet" href="../reveal.js/dist/theme/gus-slides.css" id="theme">
+     <!--- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    </head>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+    </style>
+    <body>
+
+      <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-image="wk2cover.jpg">
+        <h2 style = "color:white">Week 2</h2>
+        <p style = "color:white">Vectors and 2D Kinematics</p>
+      </section>
+
+      <section class="top">
+        <header>
+          <div style="background-color: #cfc ; padding: 10px; border: 1px solid green; width: 100%;">
+          Overall Learning Objecives
+          </div>
+        </header>
+        <h3>Overall Learning Objectives</h3>
+        <ul>
+          <li>Interpret word problems and translate them into physics concepts and equations</li>
+          <li>Draw effective and useful diagrams</li>
+          <li>Analyze and assess your answer for its plausibility</li>
+          <li>Incorporate new material into the broader understanding of physics concepts that you've already learned</li>
+        </ul>
+      </section>
+
+      <section>
+      <div id = "content"> Today's Specific Learning Objectives ​</div>
+      <br>
+      <br>
+      <ul>
+          <li>Perform vector operations algebraically and geometrically</li>
+          <li>Visualize motion in 2 dimensions</li>
+          <li>Apply the circular motion and projectile motion models</li>
+      </ul>
+    </section>
+    
+    <section>
+      <div id = "discussion"> Try to do some stuff dudes</div>
+      <p>Here's a question</p>
+      <br>
+      <div style="float: left;margin-left: 1%;">
+        Here are the answer choices:
+        <br>
+        <ol class="a">
+          <li> First Choice</li>
+          <li> Second Choice</li>
+        </ol>
+        <br>
+        <ol class="n">
+          <li> First Choice</li>
+          <li> Second Choice</li>
+        </ol>
+        
+      </div>
+
+    </section>
+
+    <section>
+      <iframe src="https://trinket.io/embed/glowscript/ea0071d6bcb9?outputOnly=true&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </section>
+    <section>
+      <h3>Instructions</h3>
+      <ul type="ul ul">
+        <font size="+3">
+        <li>Introduce yourself to your colleagues!</li>
+        <li>Share some form of contact info (e.g email)</li>
+        <li>Choose a group member to take frequent screenshots of written work/questions answers so everybody has access to what you've done today. Share with your group after class!</li>
+        <li>If you need assistance, go to the google sheet below and put a request under your group number (same as your breakout room number): <a href="https://tinyurl.com/yxf32cau" target="_blank">https://tinyurl.com/yxf32cau</a></li>
+        <li> <b>Do not plug in numbers</b> until you are at the very last step of a calculation (i.e "final answer = something") or are explicitly asked (i.e "find X") to do so so you can assess your algebraic expressions.
+        </li>
+        </font>
+        </ul>
+      </section>
+      <section>
+        <h3>Instructions</h3>
+        <ul>
+          <li>The point of these exercises is for everybody to work together: give everyone a chance to talk, work through your questions before moving on, and be respectful.</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Drawing on Slides</h3>
+        <p><small>Press <b>c</b> to draw on slides. Press <b>c</b> again to toggle off drawing.</small></p>
+        <p><small>Press <b>b</b> to open a whiteboard. Press <b>b</b> again to go back to slides.</small></p>
+        <p><small><b>Left-click</b> to draw, <b>right-click</b> for eraser</small></p>
+        <p><small>Press <b>DEL</b> to clear drawings from current slide.</small></p>
+        <p><small>Press <b>BACKSPACE</b> to clear drawings from all slides.</small></p>
+        <p><small>Press <b>x</b> and <b>y</b> to cycle between colors: black, <span style="color:red">red</span>, <span style="color:blue">blue</span>, and <span style="color:green">green</span></small></p>
+        <p><small>Down arrows lead to blank slides for easy sketching</small></p>
+        <p><small>Take screenshots for notes and to share with your group!</small></p>
+      </section>
+      <section>
+        <h2>Problem 1</h2>
+      </section>
+      <section>
+        <p><small>Problem 1: A field goal kicker, like the one in discussed in the lecture, is 40m away from the goalposts. She kicks the ball at an angle of 30º with respect to the ground. If the goalposts are 3m high, what is the minimum speed with which she must kick the ball in order to score the goal?</small></p>
+
+        <p><small>Model: Answer the following questions: <b>What are the essential characteristics of this situation? What simplifying assumptions do you need to make? What physics concepts might be relevant to help you solve this problem? What led you to conclude that these concepts are relevant here?</b></small></p>
+        <textarea rows="10" style="width:95%;font-size:18pt" class="submitCompare" placeholder="Type your answer"}></textarea>
+      </section>
+      <section>
+        <section>
+          <p><small>Problem 1: A field goal kicker, like the one in discussed in the lecture, is 40m away from the goalposts. She kicks the ball at an angle of 30º with respect to the ground. If the goalposts are 3m high, what is the minimum speed with which she must kick the ball in order to score the goal?</small></p>
+
+          <p><small><b>Visualize:</b> What are your knowns and unknowns?  Add both the variable name and its value (if you know it) to the diagram below. Is there any new information you can deduce from your picture?  Also, be sure to write down what quantity you're trying to find.  It may be helpful to also draw your diagram on paper and/or take a screenshot for future reference.  Just be sure to share ideas and progress with your group. You can use the down arrow to move to a blank slide, and the up arrow to come back to the problem statement</small></p> 
+        </section>
+        <section>
+        </section>
+      </section>
+      <section>
+      <p>Problem 1: Visualize Checkpoint: Does your diagram look similar to the one shown here? If it looks substantially different, be sure to discuss what those differences are and if they're important. In particular, are you perhaps making an assumption that isn't necessarily true?</p>
+      <img src="p1_diagram.jpg" width="960"/>
+      <!---<div style='float:left'>
+        <img src="p1_diagram.jpg" style="margin-left:15%;margin-top:5%"/>
+      </div>--->
+    </section>
+    <section>
+      <section>
+        <p><small>Problem 1: A field goal kicker, like the one in discussed in the lecture, is 40m away from the goalposts. She kicks the ball at an angle of 30º with respect to the ground. If the goalposts are 3m high, what is the minimum speed with which she kick the ball in order to score the goal?</small></p>
+        <p><small>Begin to Solve: Since this is projectile motion, we know all the relevant kinematic equations. Write them all down, and begin to make a plan. Have a discussion on which equations might be useful, and how to use them simultaneously. If you get stuck here, move to the next question. You can use the down arrow to move to a blank slide with more room to write.</small></p>
+      </section>
+      <section>
+      </section>
+    </section>
+    <section>
+      <script data-quiz>
+        quiz = {
+          "info": {
+            "name":    "",
+            "main": "Checkpoint quiz"
+          },
+          "questions": [
+                        { // Question 1 - Multiple Choice, Single True Answer
+                          "q": "Which of the following sounds like a better plan to use the information given in the problem?",
+                          "a": [
+                          {"option": "Eliminate the time by using the $y(t)$ equation",      "correct": false},
+                          {"option": "Eliminate the time by using the $x(t)$ equation",     "correct": true},
+                          {"option": "Eliminate the time by solving the $v_y(t)$ equation",      "correct": false},
+                          {"option": "Use the $v_y^2(t)$ kinematic equation",      "correct": false}
+                          ],
+                          "correct": "<p><span>Correct</span>Correct! Since we are given the horizontal distance it's reasonable to make that important in our solution</p>",
+                                "incorrect": "<p><span>Incorrect</span></p>" // no comma here
+                              },
+                        // more questions here
+                        ]
+                      }
+                    </script>
+                  </section>
+                  <section>
+                    <section>
+                    <p><small>Problem 1: For this problem, we are not given any of the initial velocity components, so we can't solve for the time flight directly (i.e, find a number). Since we are given information about the ball's x-displacement, we can relate the x-displacement to the y-displacement by eliminating the time using the $x(t)$ equation. If you're stuck, ask for help! </small></p>
+                    <ol>
+                      <small>
+                        <li> If this was not your plan, why did you rule it out?</li>
+                        <li> If you chose a different plan, what led you to that, and why might it not be the most convenient thing to do? (e.g are we introducing a new unknown into the problem).</li>
+                      </small>
+                    </ol>
+                    <p><small> Use the up/down arrows to move to a blank slide to draw/write the equations you are now planning to use.</small></p>
+                    <textarea rows="10" style="width:95%;font-size:18pt" class="submitCompare" placeholder="Type your answer"}></textarea>
+                  </section>
+                  <section>
+                  </section>
+                </section>
+
+                <section>
+                  <script data-quiz>
+                    quiz = {
+                      "info": {
+                        "name":    "",
+                        "main": "Checkpoint quiz"
+                      },
+                      "questions": [
+                        { // Question 1 - Multiple Choice, Single True Answer
+                          "q": "If you want to score the goal, what condition must the ball's final height satisfy?",
+                          "a": [
+                          {"option": "$y(x=40\\text{m})=3\\text{m}$",      "correct": false},
+                          {"option": "$y(x=40\\text{m})\\geq 3\\text{m}$",     "correct": true},
+                          {"option": "$y(x=40\\text{m})\\leq 3\\text{m}$",      "correct": false},
+                          {"option": "Something else.",      "correct": false}
+                          ],
+                          "correct": "<p><span>Correct</span>Correct! The final height must be greater than 3m to score the goal</p>",
+                                "incorrect": "<p><span>Incorrect</span></p>" // no comma here
+                              },
+                        // more questions here
+                        ]
+                      }
+                    </script>
+                  </section>
+                  <section>
+                  <section>
+                    <p><small>Problem 1: A field goal kicker, like the one in discussed in the lecture, is 40m away from the goalposts. She kicks the ball at an angle of 30º with respect to the ground. If the goalposts are 3m high, what is the minimum speed with which she kick the ball in order to score the goal?</p></small>
+
+                    <p><small>Solve:  Now that you've made a plan and identified the relevant equation  $(y(x=40m)\geq 3\text{m})$, finish solving the problem. In particular, manipulate the equations to obtain an expression of the type $v_0\geq$ (something), and explain why this means there is a minimum speed with which you must kick the ball. You can do your work on this page, on a Zoom whiteboard, on your own paper, or wherever else you find convenient. Just be sure to share ideas and progress with your group. As always, ask for help if you're stuck!</small></p>
+                    <textarea rows="10" style="width:95%;font-size:18pt" class="submitCompare" placeholder="Type your answer"}></textarea>
+                  </section>
+                  <section>
+                  </section>
+                </section>
+                <section>
+                  <script data-quiz>
+                    quiz = {
+                      "info": {
+                        "name":    "",
+                        "main": "Checkpoint quiz"
+                      },
+                      "questions": [
+                        { // Question 1 - Multiple Choice, Single True Answer
+                          "q": "What answer did you get for Problem 2? If your answer is <b>Something Else</b>, then go back and check your work to see where you made a mistake. If you can't figure it out, ask for help.",
+                          "a": [
+                          {"option": "$v_0\\geq 23\\text{m/s}$",      "correct": true},
+                          {"option": "Something Else",     "correct": false}                                   
+                          ],
+                          "correct": "<p><span>Correct</span></p>",
+                                "incorrect": "<p><span>Incorrect</span></p>" // no comma here
+                              },
+                        // more questions here
+                        ]
+                      }
+                    </script>
+
+                  </section>
+                  <section>
+                  Problem 1 Assess: Is your answer reasonable? How do you know this? One suggestion is to compare to the problem in the lecture. Also, if you look at your algebraic expression, you should see that if $H=D\tan\theta$, the value of $v_0$ becomes infinite. This means that if you aim the ball along the straight line connecting it to the goalposts, it's impossible to make the shot. Is this reasonable?
+
+                  Do your units work out? Did you actually check and make sure they cancel out correctly?
+                </section>
+                <section>
+                  <h2>Problem 2</h2>
+                </section>
+                <section>
+                  <section>
+                    <small>Problem 2: The WashU racecar team lets you take one of their karts out for a drive on a circular track with a radius of 145 m. At top speed, you can finish a lap in 1 minute. At time $t = 0$, you are driving by the start line of the track, which coincides with the x axis.
+                      <ol type="a">
+                      <li> Find the angular velocity, speed, and the magnitude of the car's acceleration.</li>
+                      <li> Is the velocity $\vec{v}$ of the car constant? What about its acceleration $\vec{a}$?</li>
+                      <li> Make a diagram showing the car's position, velocity, and acceleration vectors at time $t=10s$</li>
+                    </ol>
+                  </small>
+                  <textarea rows="10" style="width:95%;font-size:18pt" class="submitCompare" placeholder="Type your answer"}></textarea>
+                </section>
+                <section>
+                </section>
+              </section>
+
+
+              <section>
+                <p><small>Problem 2: <b>Visualize Checkpoint</b> Does your diagram look similar to the one shown here? If it looks substantially different, be sure to discuss what those differences are and if they're important. If you're confused, ask for help.
+                  <ol>
+                    <li>Asnwers to 1: $\omega=0.105\text{rad/s},v=15.2\text{m/s},a=1.59\text{m/s}^2$
+                    </li>
+                    <li> Answer to 2: no, because their direction changes.</li>
+                  </small></p>
+                  <div style='float:left'>
+                    <img src="p2_diagram.jpg" width="520"  style="margin-left:5%;margin-top:5%"/>
+                  </div>
+                  <div style='float:right'>
+                    <textarea rows="10" style="width:95%;font-size:18pt" class="submitCompare" placeholder="Type your answer"}></textarea>
+                  </div>
+                </section>
+
+                <section>
+                  <section>
+                  <p><small>Problem 2: The WashU racecar team lets you take one of their karts out for a drive on a circular track with a radius of 145 m. At top speed, you can finish a lap in 1 minute. At time $t = 0$, you are driving by the start line of the track, which coincides with the x axis.</small></p>
+
+                  <p><small>Find the x and y components of the velocity and acceleration vectors at time $t=10$s.
+                  </p></small>
+                  <textarea rows="10" style="width:95%;font-size:18pt" class="submitCompare" placeholder="Type your answer"}></textarea>
+                </section>
+                <section>
+                </section>
+              </section>
+
+              <section>
+
+                Answers for the previous part: $v_x=-13.2\text{m/s}$, $v_y=7.6\text{m/s}$,
+                $a_x=-0.795\text{m/s}^2$, $a_y=-1.38\text{m/s}^2$ If you got a different answer, go back and check your work. If you're confused, ask for help!
+
+              </section>
+
+              <section>
+                <h2>Reflection for today:</h2>
+                <ol>
+                  <li>What is one thing you understand better than you did before after working with your group? </li>
+                  <li>What is one thing that you found difficult or are still unclear about after working with your group?</li>
+                  <li>What is a reasonable plan for me to clear up points that I'm still unsure about? Answers for this might be sticking around after class to ask questions, go on Piazza, office hours, look up the relevant sections in the book.</li>
+                </ol>
+              </section>
+
+
+            </div>
+
+          </div>
+
+          <script src="../reveal.js/dist/reveal.js"></script>
+          <script src="../reveal.js/plugin/math/math.js"></script>
+          <script src="../reveal.js/plugin/chalkboard/plugin.js"></script>
+          <script>
+          Reveal.initialize({
+            progress: true,
+            center: false,
+             // The "normal" size of the presentation, aspect ratio will
+              // be preserved when the presentation is scaled to fit different
+              // resolutions. Can be specified using percentage units.
+            width: '100%',
+            height: '100%',
+
+              // Factor of the display size that should remain empty around
+              // the content
+            margin: 0,
+
+              // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 2.0,
+            dependencies: [
+              { src: '../reveal.js/plugin/quiz/js/quiz.js', async: true, callback: function() { prepareQuizzes({}); }}
+              ],
+              history: true,
+              transition: 'linear',
+              math: {
+                            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                            config: 'TeX-AMS_HTML-full',
+                            TeX: {
+                              Macros: {
+                                R: '\\mathbb{R}',
+                                set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+                              }
+                            }
+                          },
+                          plugins: [ RevealMath ],
+                          
+                          }
+                        );
+                      </script>
+
+                    </body>
+                    </html>
